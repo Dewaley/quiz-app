@@ -1,11 +1,11 @@
-import { Container } from 'react-bootstrap';
+import Settings from './pages/Settings'
 
 function App() {
-  return <Container>
-    <div className="d-flex">
-      Hello
+  return <div className='d-flex justify-content-center align-items-center vh-100'>
+    <div>
+      <h1 className="text-6xl">Hello</h1>
     </div>
-  </Container>;
+  </div>;
 }
 
 export default App;
