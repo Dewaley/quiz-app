@@ -1,11 +1,16 @@
-import Settings from './pages/Settings'
+import Settings from './pages/Settings';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return <div className='d-flex justify-content-center align-items-center vh-100'>
-    <div>
-      <h1 className="text-6xl">Hello</h1>
-    </div>
-  </div>;
+  return (
+    <Router>
+      <div className='flex justify-center items-center sm:h-screen bg-blue-900 text-white'>
+        <Routes>
+          <Route path='/' element={<Settings/>}/>
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
