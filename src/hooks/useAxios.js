@@ -12,7 +12,7 @@ const useAxios = ({url}) => {
     axios.get(url)
     .then(res=>setResponse(res.data))
     .catch(err => setError(err))
-    .finally(()=>setLoading(true))
+    .finally(()=>setLoading(false ))
    }
    fetchData()
  }, [url])
